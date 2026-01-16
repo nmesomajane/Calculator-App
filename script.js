@@ -43,7 +43,7 @@ function updateDisplay() {
   display.textContent = currentInput || "0";
 }
 
-/* 🎹 Keyboard Support (Bonus) */
+/* 🎹 Keyboard Support  */
 document.addEventListener("keydown", (e) => {
   if ("0123456789.+-*/".includes(e.key)) {
     appendValue(e.key.replace("*", "×").replace("/", "÷"));
